@@ -1,0 +1,23 @@
+.navbar {
+  width: calc(100% - 260px);
+  height: 60px;
+  background: linear-gradient(135deg, var(--card) 0%, #02203a 100%);
+  color: var(--text);
+  position: fixed;
+  left: 240px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 2px solid var(--accent);
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+}
