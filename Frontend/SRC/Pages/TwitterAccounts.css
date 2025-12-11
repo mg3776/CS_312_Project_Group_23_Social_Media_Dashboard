@@ -1,0 +1,239 @@
+/* Twitter Accounts Styles */
+
+.twitter-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.twitter-account-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1DA1F2;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.twitter-profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+.twitter-account-info h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.twitter-account-info p {
+  margin: 5px 0;
+  opacity: 0.9;
+}
+
+.twitter-analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.twitter-metric-card {
+  padding: 20px;
+  background: linear-gradient(135deg, #1DA1F2 0%, #1a8cd8 100%);
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.twitter-metric-card h4 {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.twitter-metric-value {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 8px 0 0 0;
+}
+
+.twitter-tweet-composer {
+  padding: 20px;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f7f9fa;
+}
+
+.twitter-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.twitter-textarea::placeholder {
+  color: #999;
+}
+
+.twitter-textarea:focus {
+  outline: none;
+  border-color: #1DA1F2;
+  box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.1);
+}
+
+.twitter-tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.twitter-char-count {
+  font-size: 13px;
+  color: #657786;
+}
+
+.twitter-char-count-warning {
+  font-size: 13px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.twitter-button {
+  padding: 10px 24px;
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.twitter-button:hover:not(:disabled) {
+  background-color: #1a91da;
+}
+
+.twitter-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.twitter-secondary-button {
+  padding: 10px 24px;
+  background-color: #e1e8ed;
+  color: #1DA1F2;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: background-color 0.2s;
+}
+
+.twitter-secondary-button:hover:not(:disabled) {
+  background-color: #cce4f0;
+}
+
+.twitter-secondary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.twitter-disconnect-btn {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.twitter-disconnect-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.twitter-tweets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.twitter-tweet-card {
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.twitter-tweet-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.twitter-tweet-text {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #0f1419;
+}
+
+.twitter-tweet-metrics {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: #657786;
+  margin-bottom: 8px;
+}
+
+.twitter-tweet-time {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.twitter-error {
+  color: #d32f2f;
+  padding: 12px;
+  background-color: #ffebee;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border-left: 4px solid #d32f2f;
+}
+
+.twitter-success {
+  color: #388e3c;
+  padding: 12px;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border-left: 4px solid #388e3c;
+}
+
+.twitter-no-data {
+  text-align: center;
+  color: #657786;
+  padding: 40px 20px;
+  background-color: #f7f9fa;
+  border-radius: 8px;
+  margin-top: 20px;
+}

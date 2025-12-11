@@ -1,0 +1,120 @@
+/* Schedule Page Styles */
+.schedule-container {
+  max-width: 800px;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  background-color: #003366;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #004080;
+}
+
+.schedule-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #004080;
+  background-color: #001a39;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.schedule-textarea:focus {
+  outline: none;
+  border-color: #4db8ff;
+  box-shadow: 0 0 5px rgba(77, 184, 255, 0.3);
+}
+
+.schedule-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #004080;
+  background-color: #001a39;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.schedule-input:focus {
+  outline: none;
+  border-color: #4db8ff;
+  box-shadow: 0 0 5px rgba(77, 184, 255, 0.3);
+}
+
+/* Calendar icon color - white */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(1.5);
+  cursor: pointer;
+}
+
+.schedule-submit-btn {
+  padding: 10px 20px;
+  background-color: #4db8ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.schedule-submit-btn:hover:not(:disabled) {
+  background-color: #2a9ad8;
+  transform: translateY(-2px);
+}
+
+.schedule-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.schedule-error {
+  color: #ff6b6b;
+  background-color: #3d1a1a;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-left: 4px solid #ff6b6b;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.schedule-card {
+  margin-top: 15px;
+  background-color: #003366;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ffcc00;
+  transition: all 0.3s ease;
+}
+
+.schedule-card:hover {
+  box-shadow: 0 4px 12px rgba(255, 204, 0, 0.2);
+  transform: translateX(5px);
+}
+
+.schedule-content {
+  color: #fff;
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+}
+
+.schedule-time {
+  color: #aaa;
+  font-size: 12px;
+}
+

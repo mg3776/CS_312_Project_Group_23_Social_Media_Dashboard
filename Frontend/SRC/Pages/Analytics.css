@@ -1,0 +1,46 @@
+/* Analytics Page Styles */
+.analytics-container {
+  padding: 20px;
+}
+
+.analytics-error {
+  color: #ff6b6b;
+  background-color: #3d1a1a;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-left: 4px solid #ff6b6b;
+}
+
+.analytics-chart-container {
+  padding: 20px;
+  background-color: #003366;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #004080;
+  transition: all 0.3s ease;
+}
+
+.analytics-chart-container:hover {
+  box-shadow: 0 4px 12px rgba(77, 184, 255, 0.2);
+}
+
+.analytics-chart-title {
+  color: #4db8ff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Responsive design for charts */
+@media (max-width: 1024px) {
+  .analytics-container {
+    padding: 15px;
+  }
+
+  .analytics-chart-container {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}
